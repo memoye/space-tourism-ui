@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+
+  margin-block: 2rem;
+  height: 5rem;
+}
+
+.headerLine {
+  flex: auto;
+  max-width: 80vmin;
+  margin-right: -2rem;
+  z-index: 3;
+  /* justify-self: right !important; */
+}
+
+.logo {
+  margin-left: 5vmin;
+  display: flex;
+  place-items: center;
+  z-index: 10;
+}
+
+.pageContent {
+  min-height: 100%;
+}
+
+.pageContent > section {
+  padding-top: 7rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+.homePage {
+  background: url("../../assets/home/background-home-desktop.jpg");
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.hero_txt {
+  color: rgb(var(--col-mid));
+  max-width: 450px;
+}
+
+.hero_txt_title {
+  font-size: var(--font-400);
+  letter-spacing: 4.75px;
+}
+
+.hero_txt_lg {
+  color: rgb(var(--col-pri-txt));
+  font-size: var(--font-800);
+  margin: 0;
+  display: block;
+  font-family: var(--ff-sec);
+  letter-spacing: normal;
+}
+
+.hero_txt p {
+  color: rgb(var(--col-pri-txt));
+  font-size: var(--font-300);
+  width: 100%;
+}
+
+.btn_container {
+  aspect-ratio: 1;
+  border: 1px solid red;
+  display: grid;
+  place-items: center;
+  max-width: 450px;
+  width: 40%;
+}
+
+.ctaBtn {
+  all: unset;
+  text-transform: uppercase;
+  font-size: var(--font-500);
+  font-family: var(--ff-sec);
+  color: rgb(var(--col-dark));
+  background: rgb(var(--col-pri-txt));
+  text-align: center;
+  width: 60%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}

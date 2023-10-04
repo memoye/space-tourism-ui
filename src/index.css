@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* colors (rgb) */
+  --col-dark: 11, 13, 23;
+  --col-mid: 208, 214, 249;
+  --col-pri-txt: 255, 255, 255;
+  --col-hov: 151, 151, 151;
+
+  /* Typography */
+  --ff-sec: "Bellefair", serif;
+  --ff-pri: "Barlow Condensed", sans-serif;
+
+  --font-100: 0.875rem;
+  --font-200: 1rem;
+  --font-300: 1.125rem;
+  --font-400: 1.75rem;
+  --font-500: 2rem;
+  --font-600: 3.5rem;
+  --font-700: 6.25rem;
+  --font-800: 9.375rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: var(--ff-pri);
+  font-size: var(--font-300);
+  background: rgb(var(--col-dark));
+  position: relative;
+  color: rgb(var(--col-pri-txt));
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  /* h6 --> subheading one */
+  font-family: var(--ff-sec);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.subtitle,
+.subheading2 {
+  font-family: var(--ff-pri);
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--col-mid);
+}
+
+h5 {
+  letter-spacing: 4.75px;
+  font-size: var(--font-400);
+  font-weight: normal;
+  color: rgb(var(--col-mid));
+}
+
+h6.subheading2 {
+  letter-spacing: 2.35px;
+}
+
+p {
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: my-counter;
+  padding: 0;
+}
+
+ol li::before {
+  content: counter(my-counter, decimal-leading-zero);
+  counter-increment: my-counter;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+ol {
+  counter-reset: my-counter -1;
+}
+
+.nav_text {
+  font-size: var(--font-200);
+  letter-spacing: 2.75px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(var(--col-hov));
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+  }
+} */
+
+/* BREAKPOINTS */
+/*tablet*/
+@media screen and (min-width: 768px) {
+}
+
+/* mobile */
+@media screen and (min-width: 375px) {
+}
