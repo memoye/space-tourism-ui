@@ -31,6 +31,14 @@
   height: 100%;
   display: flex;
   align-items: center;
+  border-bottom-color: rgba(var(--col-hov), 0);
+  transition: border-bottom-color 500ms;
+}
+
+.navBar ol li:hover {
+  height: 100%;
+  border-block: 3px solid transparent;
+  border-bottom-color: rgb(var(--col-hov), 1);
 }
 
 .navBar ol li:has(.active) {

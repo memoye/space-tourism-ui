@@ -77,6 +77,7 @@ h6.subheading2 {
 
 p {
   line-height: 2rem;
+  color: rgb(var(--col-mid));
   letter-spacing: 1px;
 }
 

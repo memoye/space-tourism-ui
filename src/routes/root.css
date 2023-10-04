@@ -14,7 +14,7 @@ header {
 .headerLine {
   flex: auto;
   max-width: 80vmin;
-  margin-right: -2rem;
+  margin-right: -6rem;
   z-index: 3;
   /* justify-self: right !important; */
 }
