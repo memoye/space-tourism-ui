@@ -28,6 +28,8 @@ header {
 
 .pageContent {
   min-height: 100%;
+  display: grid;
+  place-items: end;
 }
 
 .pageContent > section {
@@ -37,4 +39,5 @@ header {
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
+  /* overflow: hidden !important; */
 }

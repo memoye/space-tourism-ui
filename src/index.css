@@ -43,6 +43,7 @@ body {
   background: rgb(var(--col-dark));
   position: relative;
   color: rgb(var(--col-pri-txt));
+  /* overflow: hidden !important; */
 }
 
 /* body::-webkit-scrollbar {
@@ -66,6 +67,10 @@ h6 {
   text-transform: uppercase;
   font-weight: normal;
   color: var(--col-mid);
+}
+
+.page_title {
+  margin-inline: 2.25rem;
 }
 
 .subtitle {
@@ -109,6 +114,12 @@ ol li::before {
 
 ol {
   counter-reset: my-counter -1;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0;
+  display: block;
 }
 
 .nav_text {

@@ -7,7 +7,7 @@ import ErrorPage from './errorPage'
 import Root from './routes/root'
 import Home from './routes/home/home'
 import Destination, { DestinationCard } from './routes/destination/destination'
-import Crew from './routes/crew/crew'
+import Crew, { CrewMember } from './routes/crew/crew'
 import Technology from './routes/technology/technology'
 
 
@@ -31,13 +31,20 @@ const router = createBrowserRouter([
               {
                 path: '/dest/:name',
                 element: <DestinationCard />,
-                errorElement: <div>Opps</div>
+                errorElement: <div>Oops! Something went wrong.</div>
               },
             ]
           },
           {
             path: 'crew',
-            element: <Crew />
+            element: <Crew />,
+            children: [
+              {
+                path: '/crew/:id',
+                element: <CrewMember />,
+                errorElement: <div>Oops! Something went wrong.</div>
+              }
+            ]
           },
           {
             path: 'tech',

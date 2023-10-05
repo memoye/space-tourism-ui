@@ -1,14 +1,13 @@
 import './destination.css'
 import data from '../../data.json'
 import { NavBar } from '../../components'
-import { NavLink, Outlet, redirect, useNavigate, useParams } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate, useParams } from 'react-router-dom'
 import { useEffect } from 'react'
 
 
 
 
 export default () => {
-
     const navigate = useNavigate()
     const { name } = useParams()
 
@@ -16,13 +15,10 @@ export default () => {
         if (!name) navigate('/dest/moon')
     }, [name])
 
-    console.log(name)
-
-
     return (
         <section className='destPage'>
             <div className='destPageContent'>
-                <h1 className="subtitle destPage_title">
+                <h1 className="subtitle page_title">
                     <span className='subtitleNum'>01</span> pick your destination
                 </h1>
                 <section className='destination_container'>
@@ -37,8 +33,6 @@ export function DestinationCard() {
     const { name: destName } = useParams()
     const { name, images, description, distance, travel } = data.destinations.find(destination => destination.name.toLowerCase() === destName)
     const navigate = useNavigate()
-
-    console.log(destName)
 
     return (
         <div className='destination'>
@@ -60,7 +54,7 @@ export function DestinationCard() {
                                 >
                                     <NavLink
                                         to={ `/dest/${destination.name.toLowerCase()}` }
-                                        className={ ({ isActive }) => isActive ? 'active' : '' }
+                                        className={ `nav_text ${({ isActive }) => isActive ? 'active' : ''}` }
                                     >
                                         { destination.name }
                                     </NavLink>

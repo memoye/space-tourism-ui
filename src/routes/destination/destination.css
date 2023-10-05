@@ -18,10 +18,6 @@
   gap: 2rem;
 }
 
-.destPage_title {
-  margin-inline: 2.25rem;
-}
-
 .destinationNav {
   background: none;
   backdrop-filter: blur(0);

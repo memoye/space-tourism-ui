@@ -1,3 +1,92 @@
 .crewPage {
   background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  width: 100%;
+  /* max-width: ; */
+  display: grid;
+}
+
+.crewPage .page_title {
+  display: flex;
+  align-items: center;
+  align-self: end;
+  margin-top: 2rem;
+  padding-inline: 2em;
+}
+
+.crew_container {
+  max-height: 80vh;
+  height: fit-content;
+  align-self: end;
+}
+
+.crew_member {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.memberContent {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  min-width: 350px;
+  justify-content: space-between;
+  height: 50vmin;
+}
+
+.memberContent_text {
+  display: grid;
+  gap: 0.5em;
+  margin-bottom: 2rem;
+}
+
+.member_name {
+  font-size: var(--font-600);
+  width: max-content;
+  margin-bottom: 0.5em;
+}
+
+.crew_member_img {
+  height: 70vmin;
+  min-width: 300px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 40%;
+}
+
+.crew_member_img img {
+  height: 100%;
+}
+
+.member_role {
+  color: rgb(var(--col-pri-txt), 0.4);
+  font-size: var(--font-500);
+}
+
+/* ----------------- */
+
+.crewNav ul {
+  display: flex;
+  font-size: var(--font-100);
+  gap: 1.25em;
+}
+
+.crewNav li {
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 1em;
+  transition: background-color 200ms ease;
+  background-color: rgba(var(--col-pri-txt), 0.2);
+  border-radius: 50%;
+}
+
+.crewNav li:hover {
+  background-color: rgba(var(--col-hov), 0.7);
+}
+
+.crewNav ul li:has(.active) {
+  background-color: rgb(var(--col-pri-txt));
 }
