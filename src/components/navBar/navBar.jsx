@@ -1,10 +1,10 @@
 import './navBar.css'
 
-const NavBar = ({ children }) => {
+const NavBar = ({ children, className }) => {
 
 
     return (
-        <nav className='navBar'>
+        <nav className={ `navBar ${className && className}`.trimEnd() } >
             { children }
         </nav>
     )

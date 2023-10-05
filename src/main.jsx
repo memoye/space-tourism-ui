@@ -6,7 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './errorPage'
 import Root from './routes/root'
 import Home from './routes/home/home'
-import Destination from './routes/destination/destination'
+import Destination, { DestinationCard } from './routes/destination/destination'
 import Crew from './routes/crew/crew'
 import Technology from './routes/technology/technology'
 
@@ -15,25 +15,38 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
-        element: <Home />
-      },
-      {
-        path: 'dest',
-        element: <Destination />
-      },
-      {
-        path: 'crew',
-        element: <Crew />
-      },
-      {
-        path: 'tech',
-        element: <Technology />
+        errorElement: <ErrorPage />,
+        children: [
+          {
+            index: true,
+            element: <Home />
+          },
+          {
+            path: 'dest',
+            element: <Destination />,
+            children: [
+              {
+                path: '/dest/:name',
+                element: <DestinationCard />,
+                errorElement: <div>Opps</div>
+              },
+            ]
+          },
+          {
+            path: 'crew',
+            element: <Crew />
+          },
+          {
+            path: 'tech',
+            element: <Technology />
+          }
+        ],
+
       }
-    ],
-    errorElement: <ErrorPage />
+    ]
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(

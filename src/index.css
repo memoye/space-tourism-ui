@@ -45,6 +45,10 @@ body {
   color: rgb(var(--col-pri-txt));
 }
 
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
 h1,
 h2,
 h3,
@@ -64,21 +68,30 @@ h6 {
   color: var(--col-mid);
 }
 
-h5 {
+.subtitle {
   letter-spacing: 4.75px;
   font-size: var(--font-400);
-  font-weight: normal;
+  font-weight: 400;
   color: rgb(var(--col-mid));
 }
 
-h6.subheading2 {
+.subtitleNum {
+  font-weight: bold;
+  color: rgba(var(--col-pri-txt), 0.2);
+  padding-right: 0.5em;
+}
+
+.subheading2 {
   letter-spacing: 2.35px;
+  color: rgb(var(--col-mid));
+  font-size: var(--font-100);
 }
 
 p {
   line-height: 2rem;
   color: rgb(var(--col-mid));
   letter-spacing: 1px;
+  font-weight: 300;
 }
 
 ol {

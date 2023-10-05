@@ -1,7 +1,7 @@
 .homePage {
   background: url("../../assets/home/background-home-desktop.jpg");
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .hero {
@@ -10,7 +10,8 @@
   justify-content: space-between;
   width: 85%;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+  padding-top: 20vmin;
 }
 
 .hero_txt {

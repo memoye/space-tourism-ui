@@ -7,12 +7,12 @@
   align-items: center;
   background: rgba(var(--col-hov), 0.1);
   backdrop-filter: blur(10px);
-
   max-width: 70vw;
   box-sizing: content-box;
   padding-inline: 5.25rem;
 }
 
+.navBar ul,
 .navBar ol {
   box-sizing: border-box;
   margin-right: 7vmin;
@@ -24,6 +24,7 @@
   padding-inline: 1.5em;
 }
 
+.navBar ul li,
 .navBar ol li {
   cursor: pointer;
   margin: 0;
@@ -35,14 +36,17 @@
   transition: border-bottom-color 500ms;
 }
 
+.navBar ul li:hover,
 .navBar ol li:hover {
   height: 100%;
   border-block: 3px solid transparent;
   border-bottom-color: rgb(var(--col-hov), 1);
 }
 
+.navBar ul li:has(.active),
 .navBar ol li:has(.active) {
   height: 100%;
   border-block: 3px solid transparent;
   border-bottom-color: rgb(var(--col-pri-txt));
+  color: rgb(var(--col-pri-txt));
 }
