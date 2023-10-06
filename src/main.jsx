@@ -8,7 +8,7 @@ import Root from './routes/root'
 import Home from './routes/home/home'
 import Destination, { DestinationCard } from './routes/destination/destination'
 import Crew, { CrewMember } from './routes/crew/crew'
-import Technology from './routes/technology/technology'
+import Technology, { Tech } from './routes/technology/technology'
 
 
 const router = createBrowserRouter([
@@ -48,7 +48,14 @@ const router = createBrowserRouter([
           },
           {
             path: 'tech',
-            element: <Technology />
+            element: <Technology />,
+            children: [
+              {
+                path: '/tech/:id',
+                element: <Tech />,
+                errorElement: <div>Oops! Something went wrong.</div>
+              }
+            ]
           }
         ],
 

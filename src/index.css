@@ -125,6 +125,7 @@ ul li {
 .nav_text {
   font-size: var(--font-200);
   letter-spacing: 2.75px;
+  font-family: var(--ff-pri);
 }
 
 a {

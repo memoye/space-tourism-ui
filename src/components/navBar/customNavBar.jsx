@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom"
 
-export default ({ data, className, children }) => {
+export default ({ data, className, numLabel, parent }) => {
     const navigate = useNavigate()
 
     return (
@@ -11,14 +11,15 @@ export default ({ data, className, children }) => {
                         <li
                             key={ member.id }
                             onClick={ () => {
-                                navigate(`/crew/${member.id}`)
+                                navigate(`/${parent}/${member.id}`)
                             } }
                         >
                             <NavLink
-                                to={ `/crew/${member.id}` }
+                                to={ `/${parent}/${member.id}` }
                                 className={ `${({ isActive }) => isActive ? 'active' : ''}` }
                             >
-                                { children && children }
+                                { numLabel && member.id
+                                }
                             </NavLink>
                         </li>
                     ))

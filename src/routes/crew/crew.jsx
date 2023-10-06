@@ -41,6 +41,7 @@ export function CrewMember() {
                 <Nav
                     data={ data.crew }
                     className={ 'crewNav' }
+                    parent={ 'crew' }
                 />
             </section>
 
