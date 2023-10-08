@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- You can see [my solution here](https://www.frontendmentor.io/solutions/crowdfunding-product-page-using-reactjs-and-scss-8A7LR4sHcV)
-- View the [live site demo here](https://crowdfunding-product-page-mu-six.vercel.app/)
+- You can see [my solution here](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-my-first-solution-Ogi6di7dIP)
+- View the [live site demo here](https://space-tourism-ui.vercel.app/)
 
 ## My process
 
