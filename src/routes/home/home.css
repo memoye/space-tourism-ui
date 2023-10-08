@@ -73,6 +73,14 @@
 }
 
 @media screen and (max-width: 820px) {
+  .homePage {
+    background: url("../../assets/home/background-home-tablet.jpg");
+  }
+
+  .homePage {
+    text-align: center;
+  }
+
   .hero {
     flex-direction: column;
     width: 85%;
@@ -91,16 +99,21 @@
   }
 
   .ctaBtn:hover {
-    outline-width: 1em;
+    outline-width: 1.5em;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .homePage {
+    background: url("../../assets/home/background-home-mobile.jpg");
+  }
+
   .hero_txt_lg {
     font-size: calc(var(--font-700) - 1.25rem);
   }
 
   .ctaBtn {
+    box-sizing: border-box;
     font-size: calc(var(--font-200) + 0.25rem);
     width: unset;
     padding: 1em;

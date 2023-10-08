@@ -14,7 +14,7 @@ export default () => {
 
     return (
         <section className='techPage'>
-            <section>
+            <section className='techpage_inner'>
                 <h1 className="subtitle page_title">
                     <span className='subtitleNum'>03</span> Space Launch 101
                 </h1>
@@ -32,7 +32,7 @@ export function Tech() {
     const { name, images, description } = data.technology.find(item => item.id === techId)
 
     return (
-        <div className='tech_item'>
+        <section className='tech_item'>
             <section className='itemContent'>
                 <Nav
                     data={ data.technology }
@@ -42,7 +42,7 @@ export function Tech() {
                 />
 
                 <div className='tech_text'>
-                    <h3 className='nav_text heading3'>the terminologies</h3>
+                    <h3 className='nav_text heading3'>the terminology...</h3>
                     <h4 className='tech_name'>{ name }</h4>
                     <p className='tech_desc'>{ description }</p>
                 </div>
@@ -52,6 +52,6 @@ export function Tech() {
                 <img className='mobile_img' src={ images.landscape } alt={ name } />
                 <img className='desktop_img' src={ images.portrait } alt={ name } />
             </div>
-        </div >
+        </section >
     )
 }

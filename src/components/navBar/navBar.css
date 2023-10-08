@@ -9,6 +9,7 @@
   backdrop-filter: blur(10px);
   box-sizing: content-box;
   padding-inline: 5.25rem;
+  z-index: 5;
 }
 
 .navBar ul,
@@ -62,6 +63,7 @@
   .navBar ol {
     margin: 0;
     gap: 1em;
+    box-sizing: border-box;
     height: 100%;
     padding-inline: 1.5em;
   }
@@ -87,12 +89,14 @@
     flex-direction: column;
     height: fit-content;
     justify-content: centert;
+    box-sizing: border-box;
     width: 100%;
     padding: 0;
     padding-left: 30px;
   }
 
   .navBar:not(.destinationNav) ol li {
+    box-sizing: border-box;
     height: fit-content;
     border-block: none !important;
     border-block: 3px solid transparent;

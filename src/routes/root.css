@@ -8,6 +8,7 @@ header {
   width: 100%;
   margin-block: 2rem;
   height: 5rem;
+  z-index: 10;
 }
 
 .headerLine {
@@ -37,7 +38,6 @@ header {
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
-  /* overflow: hidden !important; */
 }
 
 .navIcon {
@@ -53,18 +53,26 @@ header {
   .headerLine {
     display: none;
   }
-
-  section {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 450px) {
+  header {
+    position: fixed;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
   .navIcon {
     all: unset;
     font-size: calc(var(--font-500) + 0.5rem);
     margin-right: 5vmin;
-    z-index: 5;
+    z-index: 6;
   }
 
   .isOpen {
@@ -80,5 +88,13 @@ header {
     width: 30vw;
     height: 100vh;
     top: 0;
+    z-index: 5;
+  }
+
+  .page_title {
+    width: 100%;
+    text-align: center;
+    margin-inline: 0;
+    font-size: var(--font-200);
   }
 }

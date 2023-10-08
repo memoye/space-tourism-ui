@@ -63,7 +63,7 @@ export function DestinationCard() {
                         }
                     </ul>
                 </NavBar>
-                <h2 className='desination_name'>{ name }</h2>
+                <h2 className='destination_name'>{ name }</h2>
                 <p className='destination_desc'>{ description }</p>
                 <hr />
                 <div className='destination_foot'>
