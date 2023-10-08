@@ -31,7 +31,7 @@ header {
   place-items: end;
 }
 
-.pageContent > section {
+.pageContent > .page {
   padding-top: 7rem;
   background-position: center;
   background-size: cover;

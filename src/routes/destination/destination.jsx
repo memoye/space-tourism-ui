@@ -16,7 +16,7 @@ export default () => {
     }, [name])
 
     return (
-        <section className='destPage'>
+        <section className='destPage page'>
             <div className='destPageContent'>
                 <h1 className="subtitle page_title">
                     <span className='subtitleNum'>01</span> pick your destination

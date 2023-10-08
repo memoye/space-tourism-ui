@@ -13,7 +13,7 @@ export default () => {
     }, [id])
 
     return (
-        <section className='techPage'>
+        <section className='techPage page'>
             <section className='techpage_inner'>
                 <h1 className="subtitle page_title">
                     <span className='subtitleNum'>03</span> Space Launch 101

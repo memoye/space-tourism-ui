@@ -14,7 +14,7 @@ export default () => {
     }, [id])
 
     return (
-        <section className='crewPage'>
+        <section className='crewPage page'>
             <h1 className="subtitle page_title">
                 <span className='subtitleNum'>02</span>meet your crew
             </h1>
