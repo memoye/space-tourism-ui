@@ -2,7 +2,6 @@ import data from '../../data.json'
 import './home.css'
 
 const Home = () => {
-    console.log(data)
     return (
         <section className='homePage'>
             <section className='hero'>

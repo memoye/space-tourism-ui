@@ -6,7 +6,6 @@ header {
   top: 0;
   right: 0;
   width: 100%;
-
   margin-block: 2rem;
   height: 5rem;
 }
@@ -16,7 +15,6 @@ header {
   max-width: 80vmin;
   margin-right: -6rem;
   z-index: 3;
-  /* justify-self: right !important; */
 }
 
 .logo {
@@ -40,4 +38,47 @@ header {
   min-height: 100vh;
   width: 100%;
   /* overflow: hidden !important; */
+}
+
+.navIcon {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  header {
+    margin: 0;
+    height: calc(var(--font-700) - 0.25px);
+  }
+
+  .headerLine {
+    display: none;
+  }
+
+  section {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navIcon {
+    all: unset;
+    font-size: calc(var(--font-500) + 0.5rem);
+    margin-right: 5vmin;
+    z-index: 5;
+  }
+
+  .isOpen {
+    position: fixed;
+    margin-right: 0;
+    right: 5vmin;
+  }
+
+  .navWhiteSpace {
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+    top: 0;
+  }
 }

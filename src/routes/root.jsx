@@ -2,7 +2,9 @@ import './root.css'
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom"
 import { logo } from "../assets"
 import NavBar from '../components/navBar/navBar'
-
+import { AiOutlineClose } from 'react-icons/ai'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { useState } from 'react'
 
 const Root = () => {
     const pages = [
@@ -25,6 +27,8 @@ const Root = () => {
     ]
     const navigate = useNavigate()
 
+    const [navOpen, setNavOpen] = useState(false)
+
     return (
         <>
             <header>
@@ -32,8 +36,25 @@ const Root = () => {
                     <img src={ logo } alt="Space tourism logo" />
                 </Link>
                 <hr className='headerLine' />
+                { navOpen && (
+                    <div
+                        className='navWhiteSpace'
+                        onClick={ () => { setNavOpen(false) }
+                        }
+                    />) }
 
-                <NavBar>
+                <button
+                    className={ `navIcon ${navOpen && 'isOpen'}` }
+                    onClick={ () => { setNavOpen(!navOpen) } }
+                >
+                    { navOpen ?
+                        <AiOutlineClose /> :
+                        <GiHamburgerMenu /> }
+                </button>
+
+                <NavBar
+                    className={ navOpen && 'navOpen' }
+                >
                     <ol>
                         {
                             pages

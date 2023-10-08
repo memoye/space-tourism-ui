@@ -1,5 +1,6 @@
 import './navBar.css'
 
+
 const NavBar = ({ children, className }) => {
 
 
