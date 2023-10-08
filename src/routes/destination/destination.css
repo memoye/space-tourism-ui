@@ -1,5 +1,5 @@
 .destPage {
-  background: url("../../assets/destination/background-destination-desktop.jpg");
+  background: url("/destination/background-destination-desktop.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +103,7 @@
 @media screen and (max-width: 820px) {
   .destPage {
     align-items: stretch;
+    background: url("/destination/background-destination-tablet.jpg");
   }
 
   .page_title {
@@ -157,6 +158,11 @@
 
 /* mobile */
 @media screen and (max-width: 450px) {
+  .destPage {
+    align-items: stretch;
+    background: url("/destination/background-destination-mobile.jpg");
+  }
+
   .page_title {
     transform: translateY(-15px);
   }

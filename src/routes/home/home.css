@@ -1,5 +1,5 @@
 .homePage {
-  background: url("../../assets/home/background-home-desktop.jpg");
+  background: url("/home/background-home-desktop.jpg");
   display: flex;
   align-items: center;
 }
@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 820px) {
   .homePage {
-    background: url("../../assets/home/background-home-tablet.jpg");
+    background: url("/home/background-home-tablet.jpg");
   }
 
   .homePage {
@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 450px) {
   .homePage {
-    background: url("../../assets/home/background-home-mobile.jpg");
+    background: url("/home/background-home-mobile.jpg");
   }
 
   .hero_txt_lg {

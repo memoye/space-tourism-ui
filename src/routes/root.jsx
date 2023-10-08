@@ -33,7 +33,7 @@ const Root = () => {
         <>
             <header>
                 <Link className='logo' to='/'>
-                    <img src={ logo } alt="Space tourism logo" />
+                    <img src={ '/logo.svg' } alt="Space tourism logo" />
                 </Link>
                 <hr className='headerLine' />
                 { navOpen && (
